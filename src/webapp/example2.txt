@@ -1,0 +1,16 @@
+IP -> NP1 I'
+NP1 => Det N'1
+I' => I0 VP
+Det => \L n
+N'1 => N1
+VP -> V'
+n => \G the
+N1 => \L Juan \G John
+
+V' => V NP2
+V => \L kita
+kita => \G sees
+NP2 => Det N'2
+N'2 =>N2
+N2 = \L koatl \G snake
+

@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>LingTree Helper</title>
+    </head>
+    <body>
+        <h1>LingTree Helper <span style="font-size:20px;font-style:italic">A simpler, more readable syntax for LingTree</span></h1>
+        <div style="width:700px">LingTree Helper defines a simpler syntax for describing linguistic trees.  In the form below, describe the tree in the <span style="font-style:italic">helper syntax</span> then click CONVERT to produce the original LingTree syntax. Paste the result into the LingTree Program and you're on your way!</div>
+                    $result
+        <table>
+            <tr>
+                <td valign="top" width="400px">
+                    <div style="text-align:left;border:2px solid #DDD;padding:5px;margin:5px;margin-top:20px">
+                        <div style="font-weight:bold;font-size:20px">Tips</div>
+                        <ul style="font-size:13px">
+                            <li><b>Describe your tree from the top-down. Define nodes only after they have been declared a child of another node.</b>
+                            <li>Define tree nodes in terms of their children, left to right, one definition per line.  Use '=' to separate node names from child node names ('=&gt;' and '-&gt;' work too)
+
+                            <li>the first line defines the top of the tree
+                            <li>Use numbers at the end of node names to distinguish nodes that have the same name.  The numbers are only used to reference the node in the definitions.  The numbers are removed when generating the LingTree syntax.  e.g. (NP1 or NP_1 becomes NP in the LingTree syntax)
+                            <li>backslash codes are supported, but are only used on the right side of the equals sign. (i.e. they are not used in node names)
+                            <li> when defining the lexical entry and/or gloss at the bottom of your tree, just define them all on one line (e.g. N = \L Hund \G dog )
+                            <li>blank lines are ignored
+                            <li>lines beginning with # are comments; they are also ignored
+                        </ul>
+
+        <span style="font-weight:bold">Send questions or comments to <a href="mailto:chris@hirtfamily.net">chris@hirtfamily.net</a></span>
+
+                            
+                            
+
+                    </div>
+                </td>
+                <td valign="top">
+                    <form name="form" method="POST">
+                        <div style="font-size:16px;font-weight:bold">Enter Simple Syntax Here</div>
+                        <textarea name="simple_text" rows="20" cols="40">$simple_text</textarea>
+                        <br />
+                        <input style="font-weight:bold;margin-right:40px" type="submit" value="CONVERT" />
+                        <input type="submit" name="savetofile" value="Save to File" />&nbsp;&nbsp;
+                        <a href="upload.html">Restore from file</a>
+                    </form>
+                </td>
+            </tr>
+        </table>
+        <div>
+        Download the <a href="/lingtree/files/lingtree-v.01-source.zip">source code</a> (v.01 written in Python).<br />
+        A Windows command line program <a href="/lingtree/files/ltconvert.zip">is also available</a>.
+        </div>
+    </div>
+
+    <!-- google analytics below -->
+    <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+    try {
+    var pageTracker = _gat._getTracker("UA-1834660-2");
+    pageTracker._trackPageview();
+    } catch(err) {}</script>
+</body>
+</html>
